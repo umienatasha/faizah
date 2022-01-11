@@ -17,7 +17,7 @@ $num_rows = mysqli_num_rows($result);
 if ($num_rows < 2) {
 	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment)
 	 VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment')";
-	 mysqli_query($conn, $query);
+	 mysqli_query($conn, $query) or die(mysqli_error($conn));
 	 
 	 $id_book = $conn->insert_id;
 	 $_SESSION['id_book'] = $id_book;
