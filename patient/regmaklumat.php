@@ -14,6 +14,8 @@ $comment=$_POST['comment'];
 $query = "SELECT * FROM bookings WHERE date = '$date' AND timeslot = '$timeslot' ";
 $id_book = $conn->insert_id;
 $_SESSION['id_book'] = $id_book;
+echo $_SESSION['id_book']; exit;
+echo $id_book; exit;
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 $num_rows = mysqli_num_rows($result);
