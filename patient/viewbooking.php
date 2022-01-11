@@ -1,8 +1,9 @@
 <?php
 include('connection.php');
 
+$id_book=$_SESSION['id_book'];
 
-$sql = "SELECT * FROM bookings ";
+$sql = "SELECT * FROM bookings WHERE id_book='$id_book'";
 $result = mysqli_query($conn, $sql);
 
 ?>
