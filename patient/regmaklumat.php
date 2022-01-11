@@ -20,7 +20,7 @@ $num_rows = mysqli_num_rows($result);
 if ($num_rows < 2) {
 	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment) 
 	VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment')";
-	 echo $sql; exit;
+	 
 	echo "<div class='alert alert-success'>Tempahan Anda Berjaya !
 			
 			<script>
