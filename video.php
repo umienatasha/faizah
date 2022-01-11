@@ -86,7 +86,7 @@
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
                                         <a href="search.php" class="nav__dropdown-item">Semak Temu Janji</a>
-										<a href="login.php" class="nav__dropdown-item">Tempah Slot</a>
+										<a href="patient/slot.php" class="nav__dropdown-item">Tempah Slot</a>
                                     </div>
                                 </div>
                             </div>
@@ -100,10 +100,6 @@
                     </div>
                 </div>
 
-                <a href="login.php" class="nav__link nav__logout">
-                    <i class='bx bx-log-in nav__icon' ></i>
-                    <span class="nav__name">Log In</span>
-                </a>
             </nav>
         </div>
 
