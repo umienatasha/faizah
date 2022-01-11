@@ -10,14 +10,13 @@ $age=$_POST['age'];
 $phone=$_POST['phone'];
 $gender=$_POST['gender'];
 $comment=$_POST['comment'];
-$id_patient=$_SESSION['id_patient'];
 
 $query = "SELECT * FROM bookings WHERE date = '$date' AND timeslot = '$timeslot' ";
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 $num_rows = mysqli_num_rows($result);
 if ($num_rows < 2) {
-	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment, id_patient) 
-	VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment', '$id_patient')";
+	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment) 
+	VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment')";
 	echo "<div class='alert alert-success'>Tempahan Anda Berjaya !
 			
 			<script>

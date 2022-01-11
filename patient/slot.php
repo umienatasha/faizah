@@ -64,7 +64,7 @@ $times = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'
             <div class="header__container">
                 <img src="assets/img/4.jpg" alt="" class="header__img">
 
-                <a href="index.php" class="header__logo"><strong>Selamat Datang, Ohana Physiotherapy</b> !</strong></a>
+                <a href="../index.php" class="header__logo"><strong>Selamat Datang, Ohana Physiotherapy</b> !</strong></a>
 				
 				<div class="header__toggle">
                     <i class='bx bx-menu' id="header-toggle"></i>
@@ -77,7 +77,7 @@ $times = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'
         <div class="nav" id="navbar">
             <nav class="nav__container">
                 <div>
-                    <a href="index.php" class="nav__link nav__logo">
+                    <a href="../index.php" class="nav__link nav__logo">
                         <i class='bx bxs-disc nav__icon' ></i>
                         <span class="nav__logo-name">Ohana Physiotherapy</span>
                     </a>
@@ -86,7 +86,7 @@ $times = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'
                         <div class="nav__items">
                             <h3 class="nav__subtitle">Profile</h3>
     
-                            <a href="index.php" class="nav__link active">
+                            <a href="../index.php" class="nav__link active">
                                 <i class='bx bx-user nav__icon' ></i>
                                 <span class="nav__name">Home</span>
                             </a>
@@ -100,10 +100,10 @@ $times = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="rawatan.php" class="nav__dropdown-item">Senarai Rawatan</a>
-                                        <a href="gallery.php" class="nav__dropdown-item">Galeri</a>
-                                        <a href="video.php" class="nav__dropdown-item">Testimoni</a>
-                                        <a href="time.php" class="nav__dropdown-item">Waktu Operasi</a>
+                                        <a href="../rawatan.php" class="nav__dropdown-item">Senarai Rawatan</a>
+                                        <a href="../gallery.php" class="nav__dropdown-item">Galeri</a>
+                                        <a href="../video.php" class="nav__dropdown-item">Testimoni</a>
+                                        <a href="../time.php" class="nav__dropdown-item">Waktu Operasi</a>
                                     </div>
                                 </div>
                             </div>
@@ -126,13 +126,13 @@ $times = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="search.php" class="nav__dropdown-item">Semak Temu Janji</a>
-                                        <a href="patient/slot.php" class="nav__dropdown-item">Tempah Slot</a>
+                                        <a href="../search.php" class="nav__dropdown-item">Semak Temu Janji</a>
+                                        <a href="slot.php" class="nav__dropdown-item">Tempah Slot</a>
                                     </div>
                                 </div>
                             </div>
 							
-							<a href="cuti.php" class="nav__link">
+							<a href="../cuti.php" class="nav__link">
                                 <i class='bx bx-navigation nav__icon' ></i>
                                 <span class="nav__name">Cuti Umum</span>
                             </a>
