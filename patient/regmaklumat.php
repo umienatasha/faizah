@@ -16,13 +16,13 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 $num_rows = mysqli_num_rows($result);
 if ($num_rows < 2) {
 	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment)
-	 VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment')";
-	 mysqli_query($conn, $query) or die(mysqli_error($conn));
+	VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment')";
+	mysqli_query($conn, $query) or die(mysqli_error($conn));
 	 
-	 $id_book = $conn->insert_id;
-	 $_SESSION['id_book'] = $id_book;
-	 echo $_SESSION['id_book'];
-	 echo $id_book;exit;
+	$id_book = $conn->insert_id;
+	$_SESSION['id_book'] = $id_book;
+	echo $_SESSION['id_book'];
+	echo $id_book;exit;
 
 	echo "<div class='alert alert-success'>Tempahan Anda Berjaya !
 			
