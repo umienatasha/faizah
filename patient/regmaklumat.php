@@ -18,9 +18,9 @@ $_SESSION['id_book'] = $id_book;
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 $num_rows = mysqli_num_rows($result);
 if ($num_rows < 2) {
-	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment, id_book) 
-	VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment', '$id_book')";
-	
+	$sql = "INSERT INTO bookings (date, timeslot, name, email, ic, age, phone, gender, comment) 
+	VALUES ('$date', '$timeslot', '$name', '$email', '$ic','$age', '$phone', '$gender', '$comment')";
+	 echo $sql; exit;
 	echo "<div class='alert alert-success'>Tempahan Anda Berjaya !
 			
 			<script>
@@ -43,6 +43,7 @@ if ($conn->query($sql) === TRUE) {
 }
 else {
 	echo "Error: " .$sql . "<br>" . $conn->error;
+	
 }
 
 $conn->close();
